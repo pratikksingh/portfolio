@@ -195,3 +195,9 @@ hr {
 .section {
   margin: 2rem 0;
 }
+.blog {
+  text-align: left;
+}
+.dummy-content {
+  margin-bottom: 3rem;
+}
