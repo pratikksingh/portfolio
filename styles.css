@@ -114,8 +114,16 @@ hr {
 
 .list-non-bullet {
   list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
-
+.list-non-bullet-footer {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .item {
   display: inline;
   margin: 0.5rem;
@@ -164,10 +172,19 @@ hr {
 .normal {
   padding: 1rem;
 }
-
+@media only screen and (min-width: 260px) {
+  .item pills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .off-white {
   background-color: var(--inverted--color--);
   padding: 1rem;
+}
+.item pills {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
